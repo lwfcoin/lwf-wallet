@@ -1,15 +1,15 @@
 # LWF UI
 
 LWF is a next generation crypto-currency that provides easy-to-use applications for all kinds of users. 
-For more information please refer to our website: https://oxycoin.io
+For more information please refer to our website: https://lwf.io
 
 This repository contains the [AngularJS](https://angularjs.org/) based user-interface submodule of the LWF client.
 
 ## Installation
 
 <b>NEW</b><br />
-In the latest version of <i>oxy_manager.bash</i> (found in oxy-node) you can simply run: <br />
-`./oxy_manager.bash install_wallet`
+In the latest version of <i>lwf_manager.bash</i> (found in oxy-node) you can simply run: <br />
+`./lwf_manager.bash install_wallet`
 
 <b>Manually</b><br />
 Install frontend dependencies (will run the `bower install` after the npm instalation):
@@ -43,6 +43,7 @@ You can set the following cookies (e.g. using [EditThisCookies](http://www.editt
 - Boris Povod <boris@crypti.me>
 - Oliver Beddows <oliver@lisk.io>
 - Max Kordek <max@lisk.io>
+- Angelo Melis <angelo@lwf.io> - Fork by
 
 ## License
 
@@ -58,3 +59,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
