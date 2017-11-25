@@ -43,7 +43,7 @@ angular.module('liskApp').controller('sendTransactionController', ['oxyAPI', '$s
     }
 
     function validateForm (onValid) {
-        var isAddress = /^[0-9]+[X|x]$/g;
+        var isAddress = /^[0-9]+LWF|lwf$/g;
         var correctAddress = isAddress.test($scope.to);
 
         $scope.errorMessage = {};
@@ -107,9 +107,9 @@ angular.module('liskApp').controller('sendTransactionController', ['oxyAPI', '$s
             return;
         }
 
-        if (string[string.length - 1] == 'R') {
-            var isnum = /^\d+$/.test(string.substring(0, string.length - 1));
-            if (isnum && string.length - 1 >= 1 && string.length - 1 <= 20) {
+        if (string[string.length - 3] == 'LWF') {
+            var isnum = /^\d+$/.test(string.substring(0, string.length - 3));
+            if (isnum && string.length - 3 >= 1 && string.length - 3 <= 20) {
                 $scope.accountValid = true;
             } else {
                 $scope.accountValid = false;

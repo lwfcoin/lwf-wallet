@@ -43,7 +43,7 @@ angular.module('liskApp').controller('multisignatureModalController', ['oxyAPI',
 
     $scope.addMember = function (member) {
         $scope.addingError = '';
-        var isAddress = /^[0-9]+[X|x]$/g;
+        var isAddress = /^[0-9]+LWF|lwf$/g;
         var correctAddress = isAddress.test(member);
         if ($scope.member.trim() == '') {
             $scope.addingError = 'Empty address';

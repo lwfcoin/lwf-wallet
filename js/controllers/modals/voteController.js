@@ -85,7 +85,7 @@ angular.module('liskApp').controller('voteController', ["oxyAPI", "$scope", "vot
             var shiftjs = require('shift-js');
             var transaction = shiftjs.vote.createVote(data.secret, data.delegates, data.secondSecret);
             transaction.fee = $scope.fees.vote;
-            transaction.recipientId = transaction.recipientId.replace('S','X');
+            transaction.recipientId = transaction.recipientId.replace('S','LWF');
             oxyAPI.transport({
                 nethash: $scope.nethash,
                 port: $scope.port,

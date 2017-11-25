@@ -21,7 +21,7 @@ angular.module('liskApp').controller('registrationDelegateModalController', ['ox
     }
 
     function validateUsername (onValid) {
-        var isAddress = /^[0-9]+[X|x]$/g;
+        var isAddress = /^[0-9]+LWF|lwf$/g;
         var allowSymbols = /^[a-z0-9!@$&_.]+$/g;
 
         $scope.delegateData.username = $scope.delegateData.username.trim();

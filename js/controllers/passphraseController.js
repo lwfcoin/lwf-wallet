@@ -42,7 +42,7 @@ angular.module('liskApp').controller('passphraseController', ['dposOffline', 'ox
         }
         var data = { secret: pass };
         $scope.errorMessage = "";
-        var wallet = new dposOffline.wallets.LiskLikeWallet(pass, 'X');
+        var wallet = new dposOffline.wallets.LiskLikeWallet(pass, 'LWF');
 
         oxyAPI.accounts.getAccount(wallet.address)
           .catch(function (ac) {

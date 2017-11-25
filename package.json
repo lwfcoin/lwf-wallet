@@ -54,7 +54,7 @@
     "ng-table": "=0.5.4",
     "requests": "0.1.7",
     "risejs": "^1.1.1",
-    "shift-js": "https://github.com/ShiftNrg/shift-js/tarball/master",
+    "shift-js": "https://github.com/lwfcoin/shift-js/tarball/master",
     "socket.io": "=1.4.8"
   }
 }
