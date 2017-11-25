@@ -36,7 +36,7 @@ angular.module('liskApp').controller('newUserController', ["dposOffline","$scope
             $scope.noMatch = true;
         } else {
 
-          var wallet = new dposOffline.wallets.LiskLikeWallet(pass, 'X');
+          var wallet = new dposOffline.wallets.LiskLikeWallet(pass, 'LWF');
           newUser.deactivate();
           userService.setData(wallet.address, wallet.publicKey, 0,0,0);
           userService.setForging(0);
