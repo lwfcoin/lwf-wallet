@@ -39,6 +39,7 @@
                         <i ng-if="transaction.recipientId!=transaction.senderId" class="vertical-text" ng-class="{'mdi-content-add-circle dark-meent-font': transaction.recipientId==address, 'mdi-content-remove-circle dark-red-font': transaction.senderId==address}"></i>
                         {{transaction.amount | liskFilter}}
                     </td>
+                    <td data-title="tableTransactions.cols.note">{{transaction.asset.note || 'N.A.'}}</td>
                     <td data-title="tableTransactions.cols.fee">{{transaction.fee | liskFilter}}</td>
                     <td data-title="''"></td>
                 </tr>
@@ -60,6 +61,7 @@
                         <i ng-if="transaction.recipientId!=transaction.senderId" class="vertical-text" ng-class="{'mdi-content-add-circle dark-meent-font': transaction.recipientId==address, 'mdi-content-remove-circle dark-red-font': transaction.senderId==address}"></i>
                         {{transaction.amount | liskFilter}}
                     </td>
+                    <td data-title="tableTransactions.cols.note">{{transaction.asset.note || 'N.A.'}}</td>
                     <td data-title="tableTransactions.cols.fee" sortable="'fee'">{{transaction.fee | liskFilter}}
                     </td>
                     <td data-title="''"></td>

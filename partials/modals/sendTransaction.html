@@ -31,6 +31,13 @@
                                 <span class="fee-text flat-text pull-right"><translate>Fee: {{fee | liskFilter}} LWF</span>
                                 <span class="pass-error" ng-show="errorMessage.amount">{{errorMessage.amount}}</span>
                             </div>
+                            <div class="field-padding">
+                                <div class="input-field">
+                                    <input id="note" type="text" ng-model="note" ng-focus="focus == 'note'" ng-class="{'invalid': errorMessage.note}" maxlength="64">
+                                    <label for="note"><translate>Note</translate></label>
+                                </div>
+                                <span class="pass-error" ng-show="errorMessage.note">{{errorMessage.note}}</span>
+                            </div>
                             <p class="error-container" ng-show="errorMessage.fromServer">
                                 <span class="pass-error">{{errorMessage.fromServer}}</span>
                             </p>
