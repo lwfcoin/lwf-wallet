@@ -64,7 +64,8 @@ angular.module('liskApp').controller('transactionsController', ['$scope', '$root
         recipientId : gettextCatalog.getString('Recipient'),
         timestamp : gettextCatalog.getString('Time'),
         amount : gettextCatalog.getString('Amount'),
-        fee : gettextCatalog.getString('Fee')
+        fee : gettextCatalog.getString('Fee'),
+        note : gettextCatalog.getString('Smartbridge')
     };
 
     $scope.tableTransactions.settings().$scope = $scope;

@@ -1035,7 +1035,7 @@ span.menu-text {
   font-weight: 400;
 }
 .nav-icon {
-  background-image: url('/images/sprites/navicons.png');
+  background-image: url('/images/sprites/favicons.png');
   height: 22px;
   width: 22px;
   float: left;
@@ -1222,7 +1222,7 @@ span.menu-text {
 #header .send-button {
   padding: 8px 14px;
   margin: 0 0 0 20px;
-  background-color: #0288d1;
+  background-color: #d32f2f;
   color: #fff;
   font-size: 1rem;
   font-weight: normal;
